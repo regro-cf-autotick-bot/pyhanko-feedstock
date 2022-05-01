@@ -1,5 +1,5 @@
 {% set name = "pyhanko" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyHanko-{{ version }}.tar.gz
-  sha256: 428c29a2071fecf3514deb064ac5238b86a8cb721eef2a7bd26cff0d7a319579
+  sha256: 0aec55960fb39160bdf83dfb8177b5b7359ad225d40a31344f0b0413348f2f0a
 
 build:
   number: 0
