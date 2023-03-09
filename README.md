@@ -1,11 +1,11 @@
-About pyhanko
-=============
+About pyhanko-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyhanko-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MatthiasValvekens/pyHanko
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyhanko-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for stamping and signing PDF files
 
