@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyHanko-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyHanko-{{ version }}.tar.gz
   sha256: b1f027f0f63a0c9f6c457652c8d1f5c959e6569ec79cdcdbee19cf8f9f2ad423
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pyhanko = pyhanko.__main__:launch
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - pytest-runner
     - wheel
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - asn1crypto >=1.4.0
     - click >=7.1.2
     - cryptography >=3.3.1
@@ -43,6 +43,7 @@ test:
     - pyhanko --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/MatthiasValvekens/pyHanko
