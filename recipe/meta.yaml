@@ -1,5 +1,5 @@
 {% set name = "pyhanko" %}
-{% set version = "0.35.2" %}
+{% set version = "0.36.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3363ae72aa3570c7d85ec76592f8b7e900d5695c264cafadc1926df7b0bd711
+  sha256: 243e89fb561db5d6b1ee99872658fe8f4f1c6f0b51c60639c1778ce104513c3f
 
 build:
   number: 0
